@@ -12,7 +12,7 @@ func ConvertTemperature(value float64, fromUnit, toUnit string) (float64, error)
 	} else if fromUnit == "K" && toUnit == "C" {
 		return value - 273.15, nil
 	}
-	return 0, fmt.Errorf("unsupported units: %s to %s", fromUnit, toUnit)
+	return 0, fmt.Errorf("Unsupported units: %s to %s", fromUnit, toUnit)
 }
 
 func ConvertWeight(value float64, fromUnit, toUnit string) (float64, error) {
